@@ -56,17 +56,17 @@ public class Main {
             // for debug purpose
 //            System.out.println("The number of bycicles with name " + shouldFind + " is " + result);
 
-
             // redirect the output to the outFile
             System.setOut(o);
-            // read the input from the console
-            input = inputScanner.nextLine();
-            // print the input to the outFile
-            System.out.println(input);
+            // print the result to the outFile
+            System.out.println(result);
+            // print all the bycicles to the outFile
+            for (Bycicle value : bycicles) {
+                System.out.println(value.getName());
+            }
             // redirect the output to the console
             System.setOut(console);
         }
-        System.out.println("Your input is : " + input);
         System.out.println("Your input is stored in the file : " + outFile);
     }
 }

@@ -18,12 +18,10 @@ public class MyBycicle implements IBycicle {
     }
     @Override
     public int f2(List<Bycicle> a, String name) {
-        // count and return number of bycicles name contains 'name' with case-insensitive
+        // count and return number and index of bycicles name contains 'name' with case-insensitive, name contain both numbers and letters
         int count = 0;
-        Bycicle bycicle = new Bycicle();
         for (Bycicle value : a) {
-            bycicle = (Bycicle) value;
-            if (bycicle.getName().toLowerCase().contains(name.toLowerCase())) {
+            if (((Bycicle) value).getName().toLowerCase().contains(name.toLowerCase())) {
                 count++;
             }
         }
